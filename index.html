@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <title>Technical Documentation</title>
+</head>
+<body>
+    <nav id="navbar" class="navbar">
+        <header><h1>CSS Grid</h1></header>
+        <ul class="navgroup">
+            <li><a class="nav-link" href="#Basic_Concepts_of_grid_layout">Basic Concepts of grid layout</a></li>
+            <li> <a class="nav-link" href="#What_is_a_grid_?">What is a grid ?</a></li>
+            <li><a class="nav-link" href="#The_grid_container">The grid container</a></li>
+            <li><a class="nav-link" href="#Grid_tracks">Grid tracks</a></li>
+            <li><a class="nav-link" href="#Grid_cells">Grid cells</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        </section>
+        <section  id="Basic_Concepts_of_grid_layout" class="main-section">
+            <header><h1>Basic Concepts of grid layout</h1></header>
+            <p>CSS Grid Layout introduces a two-dimensional grid system to CSS. Grids can be used to lay out major page areas or small user interface elements. This article introduces the CSS Grid Layout and the new terminology that is part of the CSS Grid Layout Level 1 specification. The features shown in this overview will then be explained in greater detail in the rest of this guide.</p>
+            <p><code></code></p>
+        </section>
+        <section id="What_is_a_grid_?" class="main-section">
+            <header><h2>What is a grid ?</h2></header>
+            <p>A grid is a set of intersecting horizontal and vertical lines defining columns and rows. Elements can be placed onto the grid within these column and row lines. CSS grid layout has the following features:</p>
+            <ul>
+                <li>
+                <h3>Fixed and flexible track sizes</h3>
+                <p>You can create a grid with fixxed sizes - using pixels for example. This sets the grid to the specified pixel which fits to the layout you desire. You can also create a grid using flexible sizes with precentages or with the new fr unit designed for this purpose.</p>
+                </li>
+                <li>
+                <h3>Item Placement</h3>
+                <p>You can place items into a precise location on the grid using line numbers, names or by targeting an area of the grid. Grid also contains an algorithm to control the placement of items not given an explicit position on the grid.</p>
+                </li>
+                <li>
+                <h3>Creation of additional tracks to hold content</h3>
+                <p>You can define an explicit grid with grid layout. The Grid Layout specification is flexible enough to add additional rows and columns when needed. Features such as adding “as many columns that will fit into a container” are included.</p>
+                </li>
+                <li>
+                <h3>Alignment control</h3>
+                <p>Grid contains alignment features so we can control how the items align once placed into a grid area, and how the entire grid is aligned.</p>
+                </li>
+                <li>
+                <h3>Control of overlapping content</h3>
+                <p>More than one item can be placed into a grid cell or area and, they can partially overlap each other. This layering may then be controlled with the z-index property.</p>
+                </li>
+             </ul>
+            <p>Grid is a powerful specification that, when combined with other parts of CSS such as flexbox, can help you create layouts that were previously impossible to build in CSS. It all starts by creating a grid in your <strong>grid container</strong></p>            
+        </section>
+
+        <section  id="The_grid_container" class="main-section">
+            <header><h2>The grid container</h2></header>
+            <p>We create a grid container by declaring <code>display: grid</code> or <code>display: inline-grid</code> on an element. As soon as we do this, all direct children of that element become grid items.</p>
+        </section>
+        <section  id="Grid_tracks" class="main-section">
+            <header><h2>Grid tracks</h2></header>
+            <p>We define rows and columns on our grid with the <code>grid-template-columns</code> and <code>grid-template-rows</code> properties. These define grid tracks. A grid track is the space between any two lines on the grid. In the below image you can see a track highlighted – this is the first row track in our grid.</p>
+        </section>
+        <section  id="Grid_cells" class="main-section">
+            <header><h2>Grid cells</h2></header>
+            <p>A grid cell is the smallest unit on a grid. Conceptually it is like a table cell. As we saw in our earlier examples, once a grid is defined as a parent the child items will lay themselves out in one cell each of the defined grid. In the below image, I have highlighted the first cell of the grid.</p>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
